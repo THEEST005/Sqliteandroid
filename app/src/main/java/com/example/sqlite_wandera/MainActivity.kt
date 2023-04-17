@@ -1,5 +1,6 @@
 package com.example.sqlite_wandera
 
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -24,5 +25,7 @@ class MainActivity : AppCompatActivity() {
         delete = findViewById(R.id.btndelete)
 
 
+
+        db = openOrCreateDatabase("Wandera", Context.MODE_PRIVATE)
     }
 }
