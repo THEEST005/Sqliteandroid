@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
 
             //validate your text
             if (jina_edt.isEmpty() || arafa_edt.isEmpty() || kitambulisho_edt.isEmpty()){
-                Toast.makeText(this, "Cannot submit ana empty field", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Cannot submit an empty field", Toast.LENGTH_SHORT).show()
 
             } else{
                 db.execSQL("INSERT INTO users VALUES('\"+jina_edt+\"', '\"+arafa_edt+\"', '\"+kitambulisho_edt+\"')")
